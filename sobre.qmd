@@ -1,0 +1,23 @@
+---
+title: "Sobre Mim"
+---
+Sou biólogo e pesquisador com foco na conservação de carnívoros neotropicais. Minha trajetória une a ecologia acadêmica a soluções tecnológicas, aplicando ciência de dados para resolver desafios de conservação em larga escala. Atualmente, sou pesquisador no Observatório da Biodiversidade.
+
+## Área de Pesquisa
+
+Minha pesquisa concentra-se na **ecologia espacial e conservação da onça-pintada**, utilizando modelos de distribuição de espécies e manejo de grandes volumes de dados.
+
+Tenho experiência consolidada em:
+
+
+* **Modelagem de Distribuição de Espécies (SDMs):** Desenvolvimento de métricas auxiliares e criação de pacotes estatísticos em R.
+
+* **Ciência de Dados Ecológicos:** Curadoria de dados de biodiversidade e ciência cidadã, incluindo a captação, organização e treinamento para o SIBBr (Sistema de Informação sobre a Biodiversidade Brasileira) no Darwin Core.
+
+* **Tecnologias de Monitoramento:** Uso de armadilhas fotográficas e sensoriamento remoto para estudo de fauna.
+
+## Formação
+
+- **Doutorado em Biologia Animal** - Universidade Federal do Rio Grande do Sul, 2024.
+- **Mestrado em Recursos Naturais do Cerrado** - Universidade Estadual de Goiás, 2015.
+- **Graduação em Ciências Biológicas** - Universidade Estadual de Goiás, 2012.

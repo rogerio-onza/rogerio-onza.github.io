@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "sobre.html",
+    "href": "sobre.html",
+    "title": "Sobre Mim",
+    "section": "",
+    "text": "Sou biólogo e pesquisador com foco na conservação de carnívoros neotropicais. Minha trajetória une a ecologia acadêmica a soluções tecnológicas, aplicando ciência de dados para resolver desafios de conservação em larga escala. Atualmente, sou pesquisador no Observatório da Biodiversidade."
+  },
+  {
+    "objectID": "sobre.html#área-de-pesquisa",
+    "href": "sobre.html#área-de-pesquisa",
+    "title": "Sobre Mim",
+    "section": "Área de Pesquisa",
+    "text": "Área de Pesquisa\nMinha pesquisa concentra-se na ecologia espacial e conservação da onça-pintada, utilizando modelos de distribuição de espécies e manejo de grandes volumes de dados.\nTenho experiência consolidada em:\n\nModelagem de Distribuição de Espécies (SDMs): Desenvolvimento de métricas auxiliares e criação de pacotes estatísticos em R.\nCiência de Dados Ecológicos: Curadoria de dados de biodiversidade e ciência cidadã, incluindo a captação, organização e treinamento para o SIBBr (Sistema de Informação sobre a Biodiversidade Brasileira) no Darwin Core.\nTecnologias de Monitoramento: Uso de armadilhas fotográficas e sensoriamento remoto para estudo de fauna."
+  },
+  {
+    "objectID": "sobre.html#formação",
+    "href": "sobre.html#formação",
+    "title": "Sobre Mim",
+    "section": "Formação",
+    "text": "Formação\n\nDoutorado em Biologia Animal - Universidade Federal do Rio Grande do Sul, 2024.\nMestrado em Recursos Naturais do Cerrado - Universidade Estadual de Goiás, 2015.\nGraduação em Ciências Biológicas - Universidade Estadual de Goiás, 2012."
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Meu Primeiro Post",
+    "section": "",
+    "text": "Conteúdo do seu post…"
+  },
+  {
+    "objectID": "posts/index.html#introdução",
+    "href": "posts/index.html#introdução",
+    "title": "Meu Primeiro Post",
+    "section": "",
+    "text": "Conteúdo do seu post…"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Rogério Nunes",
+    "section": "",
+    "text": "Doutor em Biologia Animal\nSou biólogo e pesquisador focado na conservação da onça-pintada (Panthera onca). Meu trabalho combina ecologia espacial, modelagem estatística e gestão de dados para gerar conhecimento aplicado à biodiversidade.\nAtualmente, trabalho desenvolvendo soluções em Modelagem de Distribuição de Espécies (SDMs) e processamento automatizado de imagens de armadilhas fotográficas.\nVer Projetos → Sobre Mim\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nÚltima Atualização: Estou trabalhando atualmente em um artigo sobre spatial filtering em SDMs com foco na onça-pintada. Acompanhe no Blog →"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Meu Primeiro Post\n\n\n\npesquisa\n\nconservação\n\n\n\nIntrodução\n\n\n\n\n\nJan 1, 2025\n\n\nRogério\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "carreira.html",
+    "href": "carreira.html",
+    "title": "Carreira",
+    "section": "",
+    "text": "Pesquisador\nObservatório da Biodiversidade | 2025 - Presente\nResponsável pela mobilização de dados de felinos brasileiros junto a instituições e projetos para o SIBBr, visando democratizar o acesso à informação para conservação e assegurar a soberania nacional dos dados biológicos.\n\n\nBolsista\nCENAP/ICMBio/Felinos do Pampa | Abril - 2025 - Setembro - 2025\nDesenvolvi a base de dados de pequenos felinos brasileiros para o CENAP/ICMBio, instituição que hoje detém a guarda do acervo. Atuação realizada no âmbito do projeto Felinos do Pampa.\n\n\nDoutorado\nUniversidade Federal do Rio Grande do Sul - UFRGS | 2020 - 2024\nTese focada na ecologia e conservação da onça-pintada (Panthera onca). O estudo abordou a modelagem de distribuição em escala Neotropical, aplicou modelos baseados em indivíduos (IBMs) para avaliar a depleção de presas no Parque Nacional do Iguaçu e analisou o cenário de conservação do último indivíduo remanescente no Rio Grande do Sul."
+  },
+  {
+    "objectID": "midia.html",
+    "href": "midia.html",
+    "title": "Mídia",
+    "section": "",
+    "text": "Data: Agosto 2023\nAssistir →\n\n\n\nData: Maio 2025\nLer →"
+  },
+  {
+    "objectID": "midia.html#aparições-na-mídia",
+    "href": "midia.html#aparições-na-mídia",
+    "title": "Mídia",
+    "section": "",
+    "text": "Data: Agosto 2023\nAssistir →\n\n\n\nData: Maio 2025\nLer →"
+  },
+  {
+    "objectID": "projetos.html",
+    "href": "projetos.html",
+    "title": "Projetos",
+    "section": "",
+    "text": "Status: Em andamento\nVer no GitHub\n\n\n\nStatus: Em andamento\nVer no GitHub\n\n\n\nUm workflow em R que compila, limpa e integra registros de ocorrência de pequenos felinos brasileiros (por exemplo, GBIF, SALVE, Felinos do Pampa), produzindo bases de dados curadas taxonomicamente e espacialmente para análises ecológicas e de conservação.\nStatus: Concluído\nVer no GitHub\n\n\n\nUm conjunto de scripts em R para organizar e fazer o pós-processamento de vídeos de armadilhas fotográficas do Parque Estadual do Turvo, integrando planilhas de campo e saídas do Addax para triagem automatizada. O workflow separa vídeos por espécie e armadilha, padroniza nomes de arquivos, identifica faltantes/duplicatas e move ou exclui registros.\nStatus: Concluído\nVer no GitHub"
+  },
+  {
+    "objectID": "projetos.html#projetos-de-pesquisa",
+    "href": "projetos.html#projetos-de-pesquisa",
+    "title": "Projetos",
+    "section": "",
+    "text": "Status: Em andamento\nVer no GitHub\n\n\n\nStatus: Em andamento\nVer no GitHub\n\n\n\nUm workflow em R que compila, limpa e integra registros de ocorrência de pequenos felinos brasileiros (por exemplo, GBIF, SALVE, Felinos do Pampa), produzindo bases de dados curadas taxonomicamente e espacialmente para análises ecológicas e de conservação.\nStatus: Concluído\nVer no GitHub\n\n\n\nUm conjunto de scripts em R para organizar e fazer o pós-processamento de vídeos de armadilhas fotográficas do Parque Estadual do Turvo, integrando planilhas de campo e saídas do Addax para triagem automatizada. O workflow separa vídeos por espécie e armadilha, padroniza nomes de arquivos, identifica faltantes/duplicatas e move ou exclui registros.\nStatus: Concluído\nVer no GitHub"
+  }
+]

@@ -1,0 +1,12 @@
+---
+title: "Meu Primeiro Post"
+description: "Introdução"
+author: "Rogério"
+date: "2025-01-01"
+categories: [pesquisa, conservação]
+image: "image.jpg"
+---
+
+## Introdução
+
+Conteúdo do seu post...

@@ -1,0 +1,19 @@
+---
+title: "Mídia"
+---
+
+## Aparições na Mídia
+
+::: {.card .p-4 .mb-4}
+### JA Repórter - Último refúgio da onça-pintada no RS | Globo
+**Data:** Agosto 2023
+
+[Assistir →](https://globoplay.globo.com/v/11872671/)
+:::
+
+::: {.card .p-4 .mb-4}
+### Única onça-pintada livre no RS, Yaboti é vista em parque | Metrópoles
+**Data:** Maio 2025
+
+[Ler →](https://www.metropoles.com/brasil/unica-onca-pintada-viva-no-rs-yaboti-e-vista-em-parque-veja-imagens)
+:::
