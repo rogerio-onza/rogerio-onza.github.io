@@ -21,46 +21,18 @@
     "text": "Formação\n\nDoutorado em Biologia Animal - Universidade Federal do Rio Grande do Sul, 2024.\nMestrado em Recursos Naturais do Cerrado - Universidade Estadual de Goiás, 2015.\nGraduação em Ciências Biológicas - Universidade Estadual de Goiás, 2012."
   },
   {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "Meu Primeiro Post",
+    "objectID": "projetos.html",
+    "href": "projetos.html",
+    "title": "Projetos",
     "section": "",
-    "text": "Conteúdo do seu post…"
+    "text": "Status: Em andamento\nVer no GitHub\n\n\n\nStatus: Em andamento\nVer no GitHub\n\n\n\nUm workflow em R que compila, limpa e integra registros de ocorrência de pequenos felinos brasileiros (por exemplo, GBIF, SALVE, Felinos do Pampa), produzindo bases de dados curadas taxonomicamente e espacialmente para análises ecológicas e de conservação.\nStatus: Concluído\nVer no GitHub\n\n\n\nUm conjunto de scripts em R para organizar e fazer o pós-processamento de vídeos de armadilhas fotográficas do Parque Estadual do Turvo, integrando planilhas de campo e saídas do Addax para triagem automatizada. O workflow separa vídeos por espécie e armadilha, padroniza nomes de arquivos, identifica faltantes/duplicatas e move ou exclui registros.\nStatus: Concluído\nVer no GitHub"
   },
   {
-    "objectID": "posts/index.html#introdução",
-    "href": "posts/index.html#introdução",
-    "title": "Meu Primeiro Post",
+    "objectID": "projetos.html#projetos-de-pesquisa",
+    "href": "projetos.html#projetos-de-pesquisa",
+    "title": "Projetos",
     "section": "",
-    "text": "Conteúdo do seu post…"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Rogério Nunes",
-    "section": "",
-    "text": "Doutor em Biologia Animal\nSou biólogo e pesquisador focado na conservação da onça-pintada (Panthera onca). Meu trabalho combina ecologia espacial, modelagem estatística e gestão de dados para gerar conhecimento aplicado à biodiversidade.\nAtualmente, trabalho desenvolvendo soluções em Modelagem de Distribuição de Espécies (SDMs) e processamento automatizado de imagens de armadilhas fotográficas.\nVer Projetos → Sobre Mim\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nÚltima Atualização: Estou trabalhando atualmente em um artigo sobre spatial filtering em SDMs com foco na onça-pintada. Acompanhe no Blog →"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Meu Primeiro Post\n\n\n\npesquisa\n\nconservação\n\n\n\nIntrodução\n\n\n\n\n\nJan 1, 2025\n\n\nRogério\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "carreira.html",
-    "href": "carreira.html",
-    "title": "Carreira",
-    "section": "",
-    "text": "Pesquisador\nObservatório da Biodiversidade | 2025 - Presente\nResponsável pela mobilização de dados de felinos brasileiros junto a instituições e projetos para o SIBBr, visando democratizar o acesso à informação para conservação e assegurar a soberania nacional dos dados biológicos.\n\n\nBolsista\nCENAP/ICMBio/Felinos do Pampa | Abril - 2025 - Setembro - 2025\nDesenvolvi a base de dados de pequenos felinos brasileiros para o CENAP/ICMBio, instituição que hoje detém a guarda do acervo. Atuação realizada no âmbito do projeto Felinos do Pampa.\n\n\nDoutorado\nUniversidade Federal do Rio Grande do Sul - UFRGS | 2020 - 2024\nTese focada na ecologia e conservação da onça-pintada (Panthera onca). O estudo abordou a modelagem de distribuição em escala Neotropical, aplicou modelos baseados em indivíduos (IBMs) para avaliar a depleção de presas no Parque Nacional do Iguaçu e analisou o cenário de conservação do último indivíduo remanescente no Rio Grande do Sul.\n\n\nMestrado\nUniversidade Estadual de Goiás | 2013 - 2015\nDissertação: Cigarras (Hemiptera: Cicadidae) no Cerrado: Análise de fauna e Pulso de nutrientes\n\n\nGraduação\nUniversidade Estadual de Goiás | 2009 - 2012\nTCC: Sucesso Reprodutivo de Kielmeyera speciosa St.Hill. (Clusiaceae) em um fragmento de Cerrado sensu stricto no Campus da Universidade Estadual de Goiás, Anápolis, Brasil."
+    "text": "Status: Em andamento\nVer no GitHub\n\n\n\nStatus: Em andamento\nVer no GitHub\n\n\n\nUm workflow em R que compila, limpa e integra registros de ocorrência de pequenos felinos brasileiros (por exemplo, GBIF, SALVE, Felinos do Pampa), produzindo bases de dados curadas taxonomicamente e espacialmente para análises ecológicas e de conservação.\nStatus: Concluído\nVer no GitHub\n\n\n\nUm conjunto de scripts em R para organizar e fazer o pós-processamento de vídeos de armadilhas fotográficas do Parque Estadual do Turvo, integrando planilhas de campo e saídas do Addax para triagem automatizada. O workflow separa vídeos por espécie e armadilha, padroniza nomes de arquivos, identifica faltantes/duplicatas e move ou exclui registros.\nStatus: Concluído\nVer no GitHub"
   },
   {
     "objectID": "midia.html",
@@ -77,17 +49,73 @@
     "text": "Data: Agosto 2023\nAssistir →\n\n\n\nData: Maio 2025\nLer →"
   },
   {
-    "objectID": "projetos.html",
-    "href": "projetos.html",
-    "title": "Projetos",
+    "objectID": "carreira.html",
+    "href": "carreira.html",
+    "title": "Carreira",
     "section": "",
-    "text": "Status: Em andamento\nVer no GitHub\n\n\n\nStatus: Em andamento\nVer no GitHub\n\n\n\nUm workflow em R que compila, limpa e integra registros de ocorrência de pequenos felinos brasileiros (por exemplo, GBIF, SALVE, Felinos do Pampa), produzindo bases de dados curadas taxonomicamente e espacialmente para análises ecológicas e de conservação.\nStatus: Concluído\nVer no GitHub\n\n\n\nUm conjunto de scripts em R para organizar e fazer o pós-processamento de vídeos de armadilhas fotográficas do Parque Estadual do Turvo, integrando planilhas de campo e saídas do Addax para triagem automatizada. O workflow separa vídeos por espécie e armadilha, padroniza nomes de arquivos, identifica faltantes/duplicatas e move ou exclui registros.\nStatus: Concluído\nVer no GitHub"
+    "text": "Pesquisador\nObservatório da Biodiversidade | 2025 - Presente\nResponsável pela mobilização de dados de felinos brasileiros junto a instituições e projetos para o SIBBr, visando democratizar o acesso à informação para conservação e assegurar a soberania nacional dos dados biológicos.\n\n\nBolsista\nCENAP/ICMBio/Felinos do Pampa | Abril - 2025 - Setembro - 2025\nDesenvolvi a base de dados de pequenos felinos brasileiros para o CENAP/ICMBio, instituição que hoje detém a guarda do acervo. Atuação realizada no âmbito do projeto Felinos do Pampa.\n\n\nDoutorado\nUniversidade Federal do Rio Grande do Sul - UFRGS | 2020 - 2024\nTese focada na ecologia e conservação da onça-pintada (Panthera onca). O estudo abordou a modelagem de distribuição em escala Neotropical, aplicou modelos baseados em indivíduos (IBMs) para avaliar a depleção de presas no Parque Nacional do Iguaçu e analisou o cenário de conservação do último indivíduo remanescente no Rio Grande do Sul.\n\n\nMestrado\nUniversidade Estadual de Goiás | 2013 - 2015\nDissertação: Cigarras (Hemiptera: Cicadidae) no Cerrado: Análise de fauna e Pulso de nutrientes\n\n\nGraduação\nUniversidade Estadual de Goiás | 2009 - 2012\nTCC: Sucesso Reprodutivo de Kielmeyera speciosa St.Hill. (Clusiaceae) em um fragmento de Cerrado sensu stricto no Campus da Universidade Estadual de Goiás, Anápolis, Brasil."
   },
   {
-    "objectID": "projetos.html#projetos-de-pesquisa",
-    "href": "projetos.html#projetos-de-pesquisa",
-    "title": "Projetos",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Status: Em andamento\nVer no GitHub\n\n\n\nStatus: Em andamento\nVer no GitHub\n\n\n\nUm workflow em R que compila, limpa e integra registros de ocorrência de pequenos felinos brasileiros (por exemplo, GBIF, SALVE, Felinos do Pampa), produzindo bases de dados curadas taxonomicamente e espacialmente para análises ecológicas e de conservação.\nStatus: Concluído\nVer no GitHub\n\n\n\nUm conjunto de scripts em R para organizar e fazer o pós-processamento de vídeos de armadilhas fotográficas do Parque Estadual do Turvo, integrando planilhas de campo e saídas do Addax para triagem automatizada. O workflow separa vídeos por espécie e armadilha, padroniza nomes de arquivos, identifica faltantes/duplicatas e move ou exclui registros.\nStatus: Concluído\nVer no GitHub"
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Meu Primeiro Post\n\n\n\npesquisa\n\nconservação\n\n\n\nIntrodução\n\n\n\n\n\nJan 1, 2025\n\n\nRogério\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Rogério Nunes",
+    "section": "",
+    "text": "Doutor em Biologia Animal\nSou biólogo e pesquisador focado na conservação da onça-pintada (Panthera onca). Meu trabalho combina ecologia espacial, modelagem estatística e gestão de dados para gerar conhecimento aplicado à biodiversidade.\nAtualmente, trabalho desenvolvendo soluções em Modelagem de Distribuição de Espécies (SDMs) e processamento automatizado de imagens de armadilhas fotográficas.\nVer Projetos → Sobre Mim\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nÚltima Atualização: Estou trabalhando atualmente em um artigo sobre spatial filtering em SDMs com foco na onça-pintada. Acompanhe no Blog →"
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Meu Primeiro Post",
+    "section": "",
+    "text": "Conteúdo do seu post…"
+  },
+  {
+    "objectID": "posts/index.html#introdução",
+    "href": "posts/index.html#introdução",
+    "title": "Meu Primeiro Post",
+    "section": "",
+    "text": "Conteúdo do seu post…"
+  },
+  {
+    "objectID": "publicacoes.html",
+    "href": "publicacoes.html",
+    "title": "Publicações",
+    "section": "",
+    "text": "Brazilian Journal of Biology | 77 (4) | Nov 2017\nPDF\n\n\n\nFronteiras: Journal of Social, Technological and Environmental Science | 5 (1) | 2016\nPDF"
+  },
+  {
+    "objectID": "publicacoes.html#artigos",
+    "href": "publicacoes.html#artigos",
+    "title": "Publicações",
+    "section": "",
+    "text": "Brazilian Journal of Biology | 77 (4) | Nov 2017\nPDF\n\n\n\nFronteiras: Journal of Social, Technological and Environmental Science | 5 (1) | 2016\nPDF"
+  },
+  {
+    "objectID": "publicacoes.html#relatórios-técnicos",
+    "href": "publicacoes.html#relatórios-técnicos",
+    "title": "Publicações",
+    "section": "Relatórios técnicos",
+    "text": "Relatórios técnicos\n\nBase de dados - Pequenos Felinos Brasileiros\nCENAP | GEF Terrestre | Felinos do Pampa | 2025\nScripts\nStatus: Concluído"
+  },
+  {
+    "objectID": "publicacoes.html#financiamento",
+    "href": "publicacoes.html#financiamento",
+    "title": "Publicações",
+    "section": "Financiamento",
+    "text": "Financiamento\n\nLiving on the edge: spatial and feeding ecology of jaguars (Panthera onca) in Turvo State Park, RS.\nFeline Conservatin Foundation | 2022\nAcessar\nStatus: Concluído"
   }
 ]

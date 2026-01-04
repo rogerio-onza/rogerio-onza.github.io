@@ -1,0 +1,45 @@
+---
+title: "Publicações"
+---
+
+## Artigos
+
+::: {.card .p-4 .mb-4}
+### Could *Fidicina mannifera* (Hemiptera: Cicadoidea: Fidicinini) promote a resource pulse in two Brazilian Cerrado vegetation classes?
+
+Brazilian Journal of Biology | 77 (4) | Nov 2017
+
+[PDF](https://doi.org/10.1590/1519-6984.13715){.btn .btn-primary}
+:::
+
+::: {.card .p-4 .mb-4}
+### Enzimas Extracelulares de Solos de Cerrado como Bioindicadores de Qualidade em Áreas Agricultáveis em Goiás, Brasil
+
+Fronteiras: Journal of Social, Technological and Environmental Science | 5 (1) | 2016
+
+[PDF](https://doi.org/10.21664/2238-8869.2016v5i1.p104-127){.btn .btn-primary}
+:::
+
+## Relatórios técnicos
+
+::: {.card .p-4 .mb-4}
+### Base de dados - Pequenos Felinos Brasileiros
+
+CENAP | GEF Terrestre | Felinos do Pampa | 2025
+
+[Scripts](projetos.qmd){.btn .btn-primary}
+
+Status: **[Concluído]{.text-success}**
+:::
+
+## Financiamento
+
+::: {.card .p-4 .mb-4}
+### Living on the edge: spatial and feeding ecology of jaguars (*Panthera onca*) in Turvo State Park, RS.
+
+Feline Conservatin Foundation | 2022
+
+[Acessar](https://rpubs.com/Rogerio_Nunes/fcfreport){.btn .btn-primary}
+
+Status: **[Concluído]{.text-success}**
+:::

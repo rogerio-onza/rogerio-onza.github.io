@@ -35,6 +35,9 @@ website:
         href: midia.qmd
       - text: "Carreira"
         href: carreira.qmd
+      - text: "Publicações"
+        href: publicacoes.qmd
+        
   page-footer:
     background: "#0E2A3B"
     foreground: "#E9E3D8"
