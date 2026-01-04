@@ -26,5 +26,19 @@ Tese focada na ecologia e conservação da onça-pintada (Panthera onca). O estu
 
 :::
 
+::: {.timeline-item}
+### Mestrado
+**Universidade Estadual de Goiás** | 2013 - 2015
+
+Dissertação: Cigarras (Hemiptera: Cicadidae) no Cerrado: Análise de fauna e Pulso de nutrientes
+
+:::
+
+::: {.timeline-item}
+### Graduação
+**Universidade Estadual de Goiás** | 2009 - 2012
+
+TCC: Sucesso Reprodutivo de *Kielmeyera speciosa* St.Hill. (Clusiaceae) em um fragmento de Cerrado *sensu stricto* no Campus da Universidade Estadual de Goiás, Anápolis, Brasil.
+:::
 
 :::
