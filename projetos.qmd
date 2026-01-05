@@ -37,5 +37,5 @@ Um conjunto de scripts em R para organizar e fazer o pós-processamento de víde
 
 Status: **[Concluído]{.text-success}**
 
-[Ver no GitHub](https://github.com/rogerio-onza/base-dados-pequenos-felinos-brasileiros){.btn .btn-primary}
+[Ver no GitHub](https://github.com/rogerio-onza/base-dados-PET){.btn .btn-primary}
 :::
