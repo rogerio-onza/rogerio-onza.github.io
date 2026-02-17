@@ -1,0 +1,44 @@
+---
+title: "Carreira"
+---
+
+::: {.timeline}
+
+::: {.timeline-item}
+### Pesquisador
+**Observatório da Biodiversidade** | 2025 - Presente
+
+Responsável pela mobilização de dados de felinos brasileiros junto a instituições e projetos para o SIBBr, visando democratizar o acesso à informação para conservação e assegurar a soberania nacional dos dados biológicos.
+:::
+
+::: {.timeline-item}
+### Bolsista
+**CENAP/ICMBio/Felinos do Pampa** | Abril - 2025 - Setembro - 2025
+
+Desenvolvi a base de dados de pequenos felinos brasileiros para o CENAP/ICMBio, instituição que hoje detém a guarda do acervo. Atuação realizada no âmbito do projeto Felinos do Pampa.
+:::
+
+::: {.timeline-item}
+### Doutorado 
+**Universidade Federal do Rio Grande do Sul - UFRGS** | 2020 - 2024
+
+Tese focada na ecologia e conservação da onça-pintada (Panthera onca). O estudo abordou a modelagem de distribuição em escala Neotropical, aplicou modelos baseados em indivíduos (IBMs) para avaliar a depleção de presas no Parque Nacional do Iguaçu e analisou o cenário de conservação do último indivíduo remanescente no Rio Grande do Sul.
+
+:::
+
+::: {.timeline-item}
+### Mestrado
+**Universidade Estadual de Goiás** | 2013 - 2015
+
+Dissertação: Cigarras (Hemiptera: Cicadidae) no Cerrado: Análise de fauna e Pulso de nutrientes
+
+:::
+
+::: {.timeline-item}
+### Graduação
+**Universidade Estadual de Goiás** | 2009 - 2012
+
+TCC: Sucesso Reprodutivo de *Kielmeyera speciosa* St.Hill. (Clusiaceae) em um fragmento de Cerrado *sensu stricto* no Campus da Universidade Estadual de Goiás, Anápolis, Brasil.
+:::
+
+:::

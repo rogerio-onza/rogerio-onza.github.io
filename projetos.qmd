@@ -1,0 +1,41 @@
+---
+title: "Projetos"
+---
+
+## Projetos de Pesquisa
+
+::: {.card .p-4 .mb-4}
+### Jaguar (*Panthera onca*) potential distribution
+
+Status: **[Em andamento]{.text-warning}**
+
+[Ver no GitHub](https://github.com/rogerio-onza/species-distribution-model-jaguar){.btn .btn-primary}
+:::
+
+::: {.card .p-4 .mb-4}
+### Jaguar (*Panthera onca*) prey depletion
+
+Status: **[Em andamento]{.text-warning}**
+
+[Ver no GitHub](https://github.com/rogerio-onza/prey-depletion-jaguar){.btn .btn-primary}
+:::
+
+::: {.card .p-4 .mb-4}
+### Base de dados - Pequenos Felinos Brasileiros | CENAP | Felinos do Pampa
+
+Um workflow em R que compila, limpa e integra registros de ocorrência de pequenos felinos brasileiros (por exemplo, GBIF, SALVE, Felinos do Pampa), produzindo bases de dados curadas taxonomicamente e espacialmente para análises ecológicas e de conservação. 
+
+Status: **[Concluído]{.text-success}**
+
+[Ver no GitHub](https://github.com/rogerio-onza/base-dados-pequenos-felinos-brasileiros){.btn .btn-primary}
+:::
+
+::: {.card .p-4 .mb-4}
+### Base de dados - Parque Estadual do Turvo
+
+Um conjunto de scripts em R para organizar e fazer o pós-processamento de vídeos de armadilhas fotográficas do Parque Estadual do Turvo, integrando planilhas de campo e saídas do Addax para triagem automatizada. O workflow separa vídeos por espécie e armadilha, padroniza nomes de arquivos, identifica faltantes/duplicatas e move ou exclui registros.  
+
+Status: **[Concluído]{.text-success}**
+
+[Ver no GitHub](https://github.com/rogerio-onza/base-dados-PET){.btn .btn-primary}
+:::

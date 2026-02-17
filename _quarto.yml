@@ -1,0 +1,59 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - images/**
+    - js/**
+website:
+  title: "Rogério Nunes"
+  favicon: favicon.png
+  search: 
+    location: navbar
+    type: overlay
+  navbar:
+    background: "#0E2A3B"
+    foreground: "#E9E3D8"
+    logo: logo.png
+    left:
+      - icon: github
+        href: https://github.com/rogerio-onza
+        aria-label: GitHub
+      - icon: bluesky
+        href: https://bsky.app/profile/seu-usuario
+        aria-label: Bluesky
+      - icon: body-text
+        href: http://lattes.cnpq.br/3527065401021125
+        aria-label: Lattes
+    right:
+      - text: "Sobre"
+        href: sobre.qmd
+      - text: "Blog"
+        href: blog.qmd
+      - text: "Projetos"
+        href: projetos.qmd
+      - text: "Mídia"
+        href: midia.qmd
+      - text: "Carreira"
+        href: carreira.qmd
+      - text: "Publicações"
+        href: publicacoes.qmd
+        
+  page-footer:
+    background: "#0E2A3B"
+    foreground: "#E9E3D8"
+    center: |
+      © 2025 Rogério Nunes. Feito com 🐆 e [Quarto](https://quarto.org)
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+    toc: true
+    smooth-scroll: true
+    code-copy: true
+    code-overflow: wrap
+    mainfont: "Noto Sans"
+    fontsize: 1.1em
+    link-external-newwindow: true
+
+execute:
+  freeze: auto

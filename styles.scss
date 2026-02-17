@@ -1,0 +1,588 @@
+/*-- scss:defaults --*/
+
+// Importar fonte Noto do Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&family=Noto+Serif:wght@400;700&display=swap');
+
+// Paleta de Cores - Onça-Pintada
+$cream: #E9E3D8;
+$navy: #0E2A3B;
+$forest: #1E4B3A;
+$rust: #8F4A2C;
+$gold: #FFBF00;
+
+// Cores do tema
+$body-bg: $cream;
+$body-color: $navy;
+$link-color: $forest;
+$link-hover-color: $rust;
+$primary: $forest;
+$secondary: $rust;
+$accent: $gold;
+
+// Fontes
+$font-family-sans-serif: "Noto Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+$font-family-serif: "Noto Serif", Georgia, serif;
+$headings-font-family: $font-family-serif;
+
+/*-- scss:rules --*/
+
+// Animação sutil inspirada na onça
+@keyframes jaguar-prowl {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+
+@keyframes spot-pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Corpo e estrutura básica
+body {
+  font-family: $font-family-sans-serif;
+  background: linear-gradient(135deg, $cream 0%, lighten($cream, 3%) 100%);
+  position: relative;
+  overflow-x: hidden;
+  
+  // Imagem de fundo da onça
+  &::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 1100px; // Ajuste o tamanho conforme necessário
+    height: 100vh;
+    background-image: url('images/jaguar-bg.png'); // Ajuste o caminho da imagem
+    background-size: contain;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    opacity: 0.08; // Bem sutil para não poluir
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+// Responsividade - esconde ou reduz em mobile
+@media (max-width: 768px) {
+  body::after {
+    width: 300px;
+    opacity: 0.05; // Ainda mais sutil no mobile
+  }
+}
+
+@media (max-width: 480px) {
+  body::after {
+    display: none; // Esconde totalmente em telas muito pequenas
+  }
+}
+
+// Navbar
+.navbar {
+  box-shadow: 0 4px 12px rgba($navy, 0.15);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border-bottom: 2px solid $gold;
+
+  .navbar-brand {
+    font-weight: 700;
+    font-family: $headings-font-family;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      color: $gold !important;
+    }
+  }
+
+  .nav-link {
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.2rem;
+    border-radius: 8px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        135deg,
+        rgba($cream, 0.10),
+        rgba($gold, 0.06)
+      );
+      border-radius: 8px;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, $gold, $rust);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      transform: translateX(-50%);
+      box-shadow: 0 0 8px rgba($gold, 0.5);
+    }
+
+    &:hover {
+      color: $cream !important;
+      transform: translateY(-3px);
+
+      &::before {
+        opacity: 1;
+      }
+
+      &::after {
+        width: 70%;
+      }
+    }
+
+    &.active {
+      color: $cream !important;
+
+      &::before {
+        opacity: 1;
+      }
+
+      &::after {
+        width: 70%;
+      }
+    }
+  }
+
+  // Ícones sociais na navbar (GitHub/Bluesky/Lattes)
+  .nav-item a[aria-label] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(white, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 0.3rem;
+    border: 1px solid rgba($gold, 0.12);
+
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      background: $forest;
+      color: $cream !important;
+      transform: translateY(-3px) rotate(3deg) scale(1.08);
+      box-shadow: 0 8px 16px rgba($gold, 0.25);
+      border-color: rgba($gold, 0.35);
+    }
+  }
+}
+
+// Títulos - LIMPOS (Sem barras laterais ou inferiores)
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+  color: $navy;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  /* Removed animation to make it cleaner, add back if desired: animation: fade-in-up 0.6s ease-out; */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: $forest;
+  /* Removido border-bottom e padding */
+}
+
+// Ajuste para Hero Bio
+.hero-bio h1 {
+  margin-top: 0 !important;
+  margin-bottom: 0.1rem !important; // Espaço pequeno abaixo do nome
+}
+
+.hero-bio h2 {
+  margin-top: 0 !important;
+}
+
+.hero-bio h3 {
+  margin-top: 0 !important; // Remove espaço acima do subtítulo
+  margin-bottom: 1rem !important;
+}
+
+// Remove TODOS os ícones de link dos headings
+.header-section-number,
+.anchorjs-link,
+a.anchorjs-link,
+.header-anchor,
+a.header-anchor,
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  display: none !important;
+}
+
+// Cards e containers
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba($navy, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background: white;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, $forest, $gold, $rust);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba($navy, 0.2);
+
+    &::before {
+      transform: translateX(0);
+    }
+  }
+}
+
+// Links
+a {
+  color: $forest;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $rust;
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: $gold;
+    transition: width 0.3s ease;
+  }
+}
+
+// Botões
+.btn {
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+
+  &-primary {
+    background: linear-gradient(135deg, $forest, darken($forest, 10%));
+    color: white;
+
+    &:hover {
+      background: linear-gradient(135deg, darken($forest, 5%), $forest);
+      transform: translateY(-2px);
+      color: white;
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+  &-outline-secondary {
+    border-color: $rust;
+    color: $rust;
+    background: transparent;
+
+    &:hover {
+      background: $rust;
+      color: white;
+      border-color: $rust;
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}
+
+// Hero section (página inicial)
+.hero-section {
+  padding: 4rem 0;
+  animation: fade-in-up 0.8s ease-out;
+
+  .hero-title {
+    font-size: 3rem;
+    background: linear-gradient(135deg, $forest, $rust, $gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fade-in-up 1s ease-out;
+  }
+
+  .hero-subtitle {
+    color: $navy;
+    font-size: 1.3rem;
+    font-weight: 300;
+    animation: fade-in-up 1.2s ease-out;
+  }
+}
+
+// Ícones sociais
+.social-icons {
+  display: flex;
+  gap: 1rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    color: $forest;
+    box-shadow: 0 4px 12px rgba($navy, 0.15);
+    transition: all 0.3s ease;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      background: $forest;
+      color: $gold;
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: 0 8px 24px rgba($forest, 0.3);
+    }
+  }
+}
+
+// Destaque de código
+pre {
+  border-radius: 8px;
+  border-left: 4px solid $gold;
+  background: darken($cream, 3%) !important;
+
+  code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+  }
+}
+
+// Footer
+.page-footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 3px solid $gold;
+}
+
+// Animações ao scroll
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Timeline de carreira
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, $gold, $rust);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 2rem;
+    animation: fade-in-up 0.6s ease-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 11px;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: $gold;
+      border: 4px solid white;
+      box-shadow: 0 0 0 3px $forest;
+      animation: spot-pulse 2s ease-in-out infinite;
+    }
+  }
+}
+
+// Responsividade
+@media (max-width: 768px) {
+  .hero-section .hero-title {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    padding-left: 40px;
+  }
+}
+
+/* =========================
+   Hero bio + Foto Onça
+   ========================= */
+
+.hero-bio {
+  padding: 3.5rem 0 2.5rem;
+}
+
+.photo-stack {
+  position: relative;
+  width: min(400px, 90vw);
+  height: min(400px, 90vw); 
+  margin-left: auto;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Base da foto */
+.photo-stack .photo {
+  position: absolute;
+  object-fit: cover;
+  background: $cream;
+  border-radius: 24px; 
+  border: 3px solid $forest;
+  box-shadow: 0 14px 34px rgba($navy, 0.18);
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              filter 0.45s ease;
+}
+
+/* Foto da onça */
+.photo-stack .photo-back {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: none; 
+  z-index: 1;
+  opacity: 1;
+  object-position: center center;
+  filter: saturate(1.05) contrast(1.03);
+}
+
+/* Foto do rosto (ESCONDIDA) */
+.photo-stack .photo-front {
+  display: none !important;
+}
+
+/* Hover elegante simples */
+.photo-stack:hover .photo-back {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 50px rgba($navy, 0.25);
+  filter: saturate(1.1) contrast(1.05);
+  border-color: lighten($gold, 10%);
+}
+
+/* Mobile: centraliza e ajusta proporções */
+@media (max-width: 992px) {
+  .photo-stack {
+    margin-left: auto;
+    margin-right: auto;
+    width: min(300px, 80vw);
+    height: min(300px, 80vw);
+  }
+}
+
+/* Força a foto a ficar à direita no desktop */
+@media (min-width: 992px) {
+  .hero-bio .col-lg-5 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .photo-stack {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+/* Mobile: centraliza a foto */
+@media (max-width: 991px) {
+  .hero-bio .photo-stack {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+}
+
+/* Ajustes finais da Hero */
+.hero-bio .row {
+  align-items: flex-start !important; 
+}
+
+@media (min-width: 992px) {
+  .hero-bio .col-lg-5 {
+    align-items: flex-start !important;
+  }
+}
