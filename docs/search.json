@@ -67,7 +67,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Meu Primeiro Post\n\n\n\npesquisa\n\nconservação\n\n\n\nIntrodução\n\n\n\n\n\nJan 1, 2025\n\n\nRogério\n\n\n\n\n\nNo matching items"
+    "text": "IA no R?\n\n\n\nIA\n\nR\n\ncoding\n\n\n\n\n\n\n\n\n\nFeb 17, 2026\n\n\nRogério\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -77,18 +77,18 @@
     "text": "Doutor em Biologia Animal\nSou biólogo e pesquisador focado na conservação da onça-pintada (Panthera onca). Meu trabalho combina ecologia espacial, modelagem estatística e gestão de dados para gerar conhecimento aplicado à biodiversidade.\nAtualmente, trabalho desenvolvendo soluções em Modelagem de Distribuição de Espécies (SDMs) e processamento automatizado de imagens de armadilhas fotográficas.\nVer Projetos → Sobre Mim\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nÚltima Atualização: Estou trabalhando atualmente em um artigo sobre spatial filtering em SDMs com foco na onça-pintada. Acompanhe no Blog →"
   },
   {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "Meu Primeiro Post",
+    "objectID": "posts/ai_no_r/index.html",
+    "href": "posts/ai_no_r/index.html",
+    "title": "IA no R?",
     "section": "",
-    "text": "Conteúdo do seu post…"
+    "text": "A popularização das LLMs com o ChatGPT para o público geral foi o ápice do “hype” dessas ferramentas. Porém, para a comunidade acadêmica, sua popularização foi recebida com cautela e até, na minha visão, com um medo exagerado.\nLembro que naquela época, peguei um script que estava corrigindo de modelos de distribuição de espécies (SDMs), e precisava rodar as análises manualmente. Joguei o script no chatGPT. Após um prompt inocente, ele me cuspiu um script automatizado com o qual eu conseguiria fazer tudo com um Ctrl+R.\nMas aí tu me questionas: “Mas então você não sabia fazer um loop em R?”. Sim, eu não sabia! (tentei por várias vezes, sem sucesso). Com aquele script da IA percebi que poderia dedicar meu tempo a outras coisas no doutorado. Veja: fiz uma disciplina na qual demorei 2 semanas para conseguir gerar um mapa coroplético em R de forma aceitável. Apliquei uma gambiarra no fim da segunda semana, pois o prazo se aproximava e precisava entregar o produto pronto. Depois disso, nunca mais precisei utilizar aquele script.\nOutra polêmica logo veio com o uso dessas ferramentas para produção de textos acadêmicos. Aqui, tenho um ponto em comum com os mais céticos, ou os “ateus de IA”. Concordo que não devemos deixar a IA escrever por nós, pois pode nos deixar preguiçosos, sem pensamento crítico, ou coloquialmente, no modo “deixe a vida me levar”. E uma dica: esses detectores de textos escritos por IA são extremamente deficientes, para não dizer burros.\nAtualmente, artigos da Elsevier já usam IA para resumir artigos, se assim você preferir ao abrir um manuscrito no site deles. Plugins do Word, como WriteFull, são basicamente uma IA que “reescreve” certas partes do seu texto fundamentado na base de dados deles. Porém, tenho percebido um certo “preconceito” no uso dessas ferramentas no meio acadêmico. Ou não?\nA IA erra muito, mas nós também erramos. O diferencial é como nós, cientistas, usamos essa ferramenta para acelerar nosso dia a dia. Seja no suporte à escrita, em análises ou em R — que era (ou é) o foco desse post. Percebeu o travessão ali? Você vai cair nessa bobagem de travessão = IA?\nBem, voltando ao R. O RStudio é muito deficiente na integração com IA e com seus agentes que se tornam mais populares diariamente. Tem até um pacote, chamado btw, mas daí é necessário usar uma API, seja ela da OpenAI, Anthropic, GLM, Minimax e etc. APIs são caras de manter, e a maioria dos estudantes não dispõe de tais recursos.\nTemos o Positron, uma IDE baseada no VS Code (que surpresa, né?) que desenvolvedores da Posit estão construindo há um tempo. Porém, ela é um meio termo entre o VS Code e o RStudio, e aí está o problema: ela tenta ser algo que não é. Da última vez que tentei usar, os plots ficavam bugados, o environment sumia, o gerenciamento de pacotes é horrível e por aí vai.\nHoje, quem não usa IA para otimizar certos processos em laboratórios, em grupos e até individualmente está ficando para trás. Não seja fiel ao RStudio. Temos boas IDEs com cotas gratuitas de agentes de IA, como Antigravity, Windsurf e Opencode, para citar alguns. Todas as IDEs que são forks do VS Code, você consegue instalar o plugin do R e realizar qualquer tipo de análise!\nNão fique preso a um modelo!\nNão acredite em aplicações “one-shot”.\nE aqui está um dos maiores problemas: prompts! Tente ser o mais detalhista possível. Hoje, gasto 1-2 horas escrevendo um prompt completo para scripts em R, leio documentações, funções de pacotes. Não tenha preguiça de ler! Revise o que a IA te cuspiu.\nAtualmente, estou desenvolvendo um app Shiny e tenho tido muito erros e acertos com a assistência da IA. Porém, no estágio que o aplicativo está, o que fiz em duas semanas, estimo que demoraria no mínimo 6 meses para chegar onde estou.\nAquele medo inicial da academia? Um misto de cautela (o que nunca é demais) com uma pitada de exagero .\nO que falta é usufruir das ferramentas com critérios. No fim, IA é exatamente isso: uma ferramenta.\nEntão, usem planos gratuitos, planos pagos que oferecem cotas generosas, usem para descobrir métodos que vocês jamais ouviram falar (mas vão ler o artigo do método, certo?), abusem de IDEs e códigos para atingir seus objetivos, desenvolvam apps com assistência da IA para seu laboratório.\nUma ferramenta bem utilizada poderá facilitar sua vida. Do contrário, será só mais uma ferramenta subutilizada na caixa de ferramentas."
   },
   {
-    "objectID": "posts/index.html#introdução",
-    "href": "posts/index.html#introdução",
-    "title": "Meu Primeiro Post",
-    "section": "",
-    "text": "Conteúdo do seu post…"
+    "objectID": "posts/ai_no_r/index.html#footnotes",
+    "href": "posts/ai_no_r/index.html#footnotes",
+    "title": "IA no R?",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nIlustração gerada com Gemini Pro↩︎"
   },
   {
     "objectID": "publicacoes.html",
