@@ -7,27 +7,27 @@ image: "images/capa_blog.png"
 image-height: "2000px"
 ---
 
-A popularização das LLMs com o chatGPT para o público geral foi o ápice do "hype" dessas ferramentas. Porém, para a comunidade acadêmica, sua popularização foi recebida com cautela e até, na minha visão, com um medo exagerado.
+A popularização das LLMs com o chatGPT para o público geral foi o ápice do *hype* dessas ferramentas. Porém, para a comunidade acadêmica, porém, essa popularização foi recebida com cautela e, na minha visão, com um medo exagerado.
 
-Lembro que naquela época, peguei um script que estava corrigindo de modelos de distribuição de espécies (SDMs), e precisava rodar as análises manualmente. Joguei o script no chatGPT. Após um prompt inocente, ele me cuspiu um script automatizado com o qual eu conseguiria fazer tudo com um Ctrl+R.
+Lembro que, à época, peguei um script que estava corrigindo de modelos de distribuição de espécies (SDMs), e cujas análises precisava rodar manualmente. Joguei o script no chatGPT. Após um prompt inocente, ele me devolveu um script automatizado com o qual eu conseguiria fazer tudo com um Ctrl+R.
 
-Mas aí tu me questionas: "Mas então você não sabia fazer um loop em R?". Sim, eu não sabia! (tentei por várias vezes, sem sucesso). Com aquele script da IA percebi que poderia dedicar meu tempo a outras coisas no doutorado. Veja: fiz uma disciplina na qual demorei 2 semanas para conseguir gerar um mapa coroplético em R de forma aceitável. Apliquei uma gambiarra no fim da segunda semana, pois o prazo se aproximava e precisava entregar o produto pronto. Depois disso, nunca mais precisei utilizar aquele script. 
+Mas aí você me questiona: "Mas então você não sabia fazer um loop em R?". Não, eu não sabia (tentei várias vezes, sem sucesso). Com aquele script percebi que poderia dedicar meu tempo a outras coisas no doutorado. Para ilustrar: fiz uma disciplina na qual demorei duas semanas para conseguir gerar um mapa coroplético em R de forma aceitável. Apliquei uma gambiarra no fim da segunda semana, pois o prazo se aproximava e precisava entregar o produto. Depois disso, nunca mais precisei daquele script.
 
-Outra polêmica logo veio com o uso dessas ferramentas para produção de textos acadêmicos. Aqui, tenho um ponto em comum com os mais céticos, ou os **"ateus de IA"**. Concordo que **não devemos deixar a IA escrever por nós**, pois pode nos deixar preguiçosos, sem pensamento crítico, ou coloquialmente, no modo "deixe a vida me levar". E uma dica: esses detectores de textos escritos por IA são extremamente deficientes, para não dizer burros.
+Outra polêmica logo veio com o uso dessas ferramentas para produção de textos acadêmicos. Aqui, tenho um ponto em comum com os mais céticos, ou os **"ateus de IA"**. Concordo que **não devemos deixar a IA escrever por nós**, pois pode nos deixar preguiçosos, embotar o pensamento crítico, ou coloquialmente, nos colocar no modo "deixe a vida me levar". E uma dica: esses detectores de textos escritos por IA são extremamente deficientes, para não dizer inúteis.
 
 ::: {.text-center}
 ![Ateu de IA^[Ilustração gerada com Gemini Pro]](images/ateu_ia.png)
 :::
 
-Atualmente, artigos da Elsevier já usam IA para resumir artigos, se assim você preferir ao abrir um manuscrito no site deles. Plugins do Word, como WriteFull, são basicamente uma IA que "reescreve" certas partes do seu texto fundamentado na base de dados deles. Porém, tenho percebido um certo "preconceito" no uso dessas ferramentas no meio acadêmico. Ou não?
+Atualmente, artigos da Elsevier já usam IA para resumir artigos, se assim você preferir ao abri-los no site deles. Plugins do Word, como WriteFull, são basicamente uma IA que "reescreve" trechos do seu texto ao seguir padrões de escrita acadêmica. Mesmo assim, tenho percebido um certo "preconceito" no uso dessas ferramentas no meio acadêmico. Ou não?
 
-A IA erra muito, mas nós também erramos. O diferencial é como nós, cientistas, usamos essa ferramenta para acelerar nosso dia a dia. Seja no suporte à escrita, em análises ou em R — que era (ou é) o foco desse post. Percebeu o travessão ali? Você vai cair nessa bobagem de travessão = IA? 
+A IA erra muito, mas nós também erramos. O diferencial está em como nós, cientistas, usamos essa ferramenta para acelerar nosso dia a dia — seja no suporte à escrita, em análises ou em R, que era (ou é) o foco desse post. Percebeu o travessão ali? Você vai cair nessa bobagem de travessão = IA? 
 
-Bem, voltando ao R. O RStudio é muito deficiente na integração com IA e com seus agentes que se tornam mais populares diariamente. Tem até um pacote, chamado [btw](https://posit-dev.github.io/btw/), mas daí é necessário usar uma API, seja ela da **OpenAI**, **Anthropic**, **GLM**, **Minimax** e etc. APIs são caras de manter, e a maioria dos estudantes não dispõe de tais recursos.
+Bem, voltando ao R. O RStudio é muito deficiente na integração com IA e com os agentes que se tornam mais populares diariamente. Existe até um pacote chamado [btw](https://posit-dev.github.io/btw/), mas é necessário usar uma API, seja da **OpenAI**, **Anthropic**, **GLM**, **Minimax** e etc. APIs são caras de manter, e a maioria dos estudantes não dispõe de tais recursos.
 
 Temos o **[Positron](https://positron.posit.co/)**, uma IDE baseada no VS Code (que surpresa, né?) que desenvolvedores da Posit estão construindo há um tempo. Porém, ela é um meio termo entre o VS Code e o RStudio, e aí está o problema: ela tenta ser algo que não é. Da última vez que tentei usar, os plots ficavam bugados, o environment sumia, o gerenciamento de pacotes é horrível e por aí vai.
 
-Hoje, quem não usa IA para otimizar certos processos em laboratórios, em grupos e até individualmente está ficando para trás. **Não seja fiel ao RStudio**. Temos boas IDEs com cotas gratuitas de agentes de IA, como **Antigravity**, **Windsurf** e **Opencode**, para citar alguns. **Todas as IDEs que são forks do VS Code, você consegue instalar o plugin do R e realizar qualquer tipo de análise!**
+Hoje, quem não usa IA para otimizar certos processos em laboratórios, em grupos e até individualmente está ficando para trás. **Não seja fiel ao RStudio**. Temos boas IDEs com cotas gratuitas de agentes de IA, como **Antigravity**, **Windsurf** e **Opencode**, para citar algumas. **Em todas as IDEs que são forks do VS Code, você consegue instalar o plugin do R e realizar qualquer tipo de análise!**
 
 **Não fique preso a um modelo!** 
 
@@ -39,12 +39,12 @@ Hoje, quem não usa IA para otimizar certos processos em laboratórios, em grupo
 - Grande parte dessas afirmações são inverídicas. 
 - Você vai precisar dedicar um pouco do seu tempo para corrigir alguns bugs, algo que a IA entendeu errado ou seu prompt não foi específico o suficiente. 
 
-E aqui está um dos maiores problemas: **prompts!** Tente ser o mais detalhista possível. Hoje, gasto 1-2 horas escrevendo um prompt completo para scripts em R, leio documentações, funções de pacotes. **Não tenha preguiça de ler!** Revise o que a IA te cuspiu.
+E aqui está um dos maiores problemas: **prompts!** Tente ser o mais detalhista possível. Hoje, gasto de 1-2 horas escrevendo um prompt completo para scripts em R, leio documentações, funções de pacotes. **Não tenha preguiça de ler!** Revise o que a IA te devolveu.
 
-Atualmente, estou desenvolvendo um app Shiny e tenho tido muito erros e acertos com a assistência da IA. Porém, no estágio que o aplicativo está, **o que fiz em duas semanas, estimo que demoraria no mínimo 6 meses para chegar onde estou.**
+Atualmente, estou desenvolvendo um app Shiny e tenho tido muito erros e acertos com a assistência da IA. No estágio que o aplicativo se encontra, **o que construí em duas semanas estimaria que levaria no mínimo seis meses para alcançar sem esse auxílio.**
 
 **O que falta é usufruir das ferramentas com critérios**. **No fim, IA é exatamente isso: uma ferramenta**. 
 
-Então, usem planos gratuitos, planos pagos que oferecem cotas generosas, usem para descobrir métodos que vocês jamais ouviram falar (mas vão ler o artigo do método, certo?), abusem de IDEs e códigos para atingir seus objetivos, desenvolvam apps com assistência da IA para seu laboratório.
+Então, usem planos gratuitos, planos pagos que oferecem cotas generosas, usem para descobrir métodos que vocês jamais ouviram falar (mas vão ler o artigo do método, certo?).Abusem de IDEs e códigos para atingir seus objetivos, desenvolvam apps com assistência da IA para seu laboratório.
 
 **Uma ferramenta bem utilizada poderá facilitar sua vida. Do contrário, será só mais uma ferramenta subutilizada na caixa de ferramentas.**

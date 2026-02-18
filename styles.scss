@@ -26,7 +26,7 @@ $headings-font-family: $font-family-serif;
 
 /*-- scss:rules --*/
 
-// Animação sutil inspirada na onça
+// Animações
 @keyframes jaguar-prowl {
   0%, 100% { transform: translateX(0); }
   50% { transform: translateX(5px); }
@@ -54,36 +54,34 @@ body {
   background: linear-gradient(135deg, $cream 0%, lighten($cream, 3%) 100%);
   position: relative;
   overflow-x: hidden;
-  
-  // Imagem de fundo da onça
+
   &::after {
     content: "";
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 1100px; // Ajuste o tamanho conforme necessário
+    width: 1100px;
     height: 100vh;
-    background-image: url('images/jaguar-bg.png'); // Ajuste o caminho da imagem
+    background-image: url('images/jaguar-bg.png');
     background-size: contain;
     background-position: left bottom;
     background-repeat: no-repeat;
-    opacity: 0.08; // Bem sutil para não poluir
+    opacity: 0.08;
     z-index: -1;
     pointer-events: none;
   }
 }
 
-// Responsividade - esconde ou reduz em mobile
 @media (max-width: 768px) {
   body::after {
     width: 300px;
-    opacity: 0.05; // Ainda mais sutil no mobile
+    opacity: 0.05;
   }
 }
 
 @media (max-width: 480px) {
   body::after {
-    display: none; // Esconde totalmente em telas muito pequenas
+    display: none;
   }
 }
 
@@ -99,9 +97,14 @@ body {
     font-family: $headings-font-family;
     transition: transform 0.3s ease;
 
+    // Garante que o pseudo-elemento de link não afete o brand
+    &::after {
+      display: none;
+    }
+
     &:hover {
       transform: scale(1.05);
-      color: $gold !important;
+      color: $gold;
     }
   }
 
@@ -109,9 +112,26 @@ body {
     position: relative;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 500;
-    padding: 0.5rem 1rem !important;
+    padding: 0.5rem 1rem;
     margin: 0 0.2rem;
     border-radius: 8px;
+
+    // Cancela o pseudo-elemento global de links
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, $gold, $rust);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      transform: translateX(-50%);
+      box-shadow: 0 0 8px rgba($gold, 0.5);
+      // Sobrescreve o bottom: -2px e left: 0 do a::after global
+      bottom: 5px;
+      left: 50%;
+    }
 
     &::before {
       content: "";
@@ -131,46 +151,23 @@ body {
       z-index: -1;
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 5px;
-      left: 50%;
-      width: 0;
-      height: 2px;
-      background: linear-gradient(90deg, $gold, $rust);
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      transform: translateX(-50%);
-      box-shadow: 0 0 8px rgba($gold, 0.5);
-    }
-
     &:hover {
-      color: $cream !important;
+      color: $cream;
       transform: translateY(-3px);
 
-      &::before {
-        opacity: 1;
-      }
-
-      &::after {
-        width: 70%;
-      }
+      &::before { opacity: 1; }
+      &::after { width: 70%; }
     }
 
     &.active {
-      color: $cream !important;
+      color: $cream;
 
-      &::before {
-        opacity: 1;
-      }
-
-      &::after {
-        width: 70%;
-      }
+      &::before { opacity: 1; }
+      &::after { width: 70%; }
     }
   }
 
-  // Ícones sociais na navbar (GitHub/Bluesky/Lattes)
+  // Ícones sociais na navbar
   .nav-item a[aria-label] {
     display: inline-flex;
     align-items: center;
@@ -190,7 +187,7 @@ body {
 
     &:hover {
       background: $forest;
-      color: $cream !important;
+      color: $cream;
       transform: translateY(-3px) rotate(3deg) scale(1.08);
       box-shadow: 0 8px 16px rgba($gold, 0.25);
       border-color: rgba($gold, 0.35);
@@ -198,7 +195,7 @@ body {
   }
 }
 
-// Títulos - LIMPOS (Sem barras laterais ou inferiores)
+// Títulos
 h1, h2, h3, h4, h5, h6 {
   font-family: $headings-font-family;
   color: $navy;
@@ -206,46 +203,41 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   position: relative;
-  /* Removed animation to make it cleaner, add back if desired: animation: fade-in-up 0.6s ease-out; */
 }
 
 h1 {
   font-size: 2.5rem;
   color: $forest;
-  /* Removido border-bottom e padding */
 }
 
-// Ajuste para Hero Bio
-.hero-bio h1 {
-  margin-top: 0 !important;
-  margin-bottom: 0.1rem !important; // Espaço pequeno abaixo do nome
+// Ajuste para Hero Bio — especificidade maior em vez de !important
+.hero-bio {
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
 }
 
-.hero-bio h2 {
-  margin-top: 0 !important;
-}
-
-.hero-bio h3 {
-  margin-top: 0 !important; // Remove espaço acima do subtítulo
-  margin-bottom: 1rem !important;
-}
-
-// Remove TODOS os ícones de link dos headings
+// Remove ícones de link dos headings — !important necessário aqui pois
+// o AnchorJS injeta estilos inline via JavaScript
 .header-section-number,
 .anchorjs-link,
 a.anchorjs-link,
 .header-anchor,
-a.header-anchor,
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a,
-h5 > a,
-h6 > a {
-  display: none !important;
+a.header-anchor {
+  display: none !important; // Necessário: sobrescreve estilo inline do AnchorJS
 }
 
-// Cards e containers
+// Cards
 .card {
   border: none;
   border-radius: 12px;
@@ -275,22 +267,33 @@ h6 > a {
       transform: translateX(0);
     }
   }
+
+  // Garante que links DENTRO de cards não ganhem a linha animada
+  a {
+    &::after {
+      display: none;
+    }
+  }
 }
 
-// Links
+// Links globais — linha animada apenas em links de texto corrido
+// Exclui contextos onde o efeito é indesejado
 a {
   color: $forest;
   text-decoration: none;
-  position: relative;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 
   &:hover {
     color: $rust;
-
-    &::after {
-      width: 100%;
-    }
   }
+}
+
+// Linha animada apenas em links dentro de parágrafos e conteúdo editorial
+p a,
+.content a,
+article a,
+.post-content a {
+  position: relative;
 
   &::after {
     content: "";
@@ -302,9 +305,13 @@ a {
     background: $gold;
     transition: width 0.3s ease;
   }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
-// Botões
+// Botões — os pseudo-elementos de link não devem afetá-los
 .btn {
   border-radius: 8px;
   padding: 0.6rem 1.5rem;
@@ -313,6 +320,10 @@ a {
   border: 2px solid transparent;
   position: relative;
   overflow: hidden;
+
+  &::after {
+    display: none; // Cancela o pseudo-elemento global
+  }
 
   &-primary {
     background: linear-gradient(135deg, $forest, darken($forest, 10%));
@@ -347,7 +358,7 @@ a {
   }
 }
 
-// Hero section (página inicial)
+// Hero section
 .hero-section {
   padding: 4rem 0;
   animation: fade-in-up 0.8s ease-out;
@@ -403,10 +414,10 @@ a {
 pre {
   border-radius: 8px;
   border-left: 4px solid $gold;
-  background: darken($cream, 3%) !important;
+  background: darken($cream, 3%);
 
   code {
-    font-family: 'Fira Code', 'Courier New', monospace;
+    font-family: 'Fira Code', 'Cascadia Code', 'Courier New', monospace;
   }
 }
 
@@ -429,7 +440,7 @@ pre {
   }
 }
 
-// Timeline de carreira
+// Timeline
 .timeline {
   position: relative;
   padding: 2rem 0;
@@ -486,64 +497,63 @@ pre {
 }
 
 /* =========================
-   Hero bio + Foto Onça
+   Hero bio + Foto
    ========================= */
 
 .hero-bio {
   padding: 3.5rem 0 2.5rem;
+
+  .row {
+    align-items: flex-start;
+  }
 }
 
 .photo-stack {
   position: relative;
   width: min(400px, 90vw);
-  height: min(400px, 90vw); 
+  height: min(400px, 90vw);
   margin-left: auto;
   margin-right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .photo {
+    position: absolute;
+    object-fit: cover;
+    background: $cream;
+    border-radius: 24px;
+    border: 3px solid $forest;
+    box-shadow: 0 14px 34px rgba($navy, 0.18);
+    transition:
+      transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+      filter 0.45s ease;
+  }
+
+  .photo-back {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    object-position: center center;
+    filter: saturate(1.05) contrast(1.03);
+  }
+
+  .photo-front {
+    display: none;
+  }
+
+  &:hover .photo-back {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 50px rgba($navy, 0.25);
+    filter: saturate(1.1) contrast(1.05);
+    border-color: lighten($gold, 10%);
+  }
 }
 
-/* Base da foto */
-.photo-stack .photo {
-  position: absolute;
-  object-fit: cover;
-  background: $cream;
-  border-radius: 24px; 
-  border: 3px solid $forest;
-  box-shadow: 0 14px 34px rgba($navy, 0.18);
-  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-              filter 0.45s ease;
-}
-
-/* Foto da onça */
-.photo-stack .photo-back {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  transform: none; 
-  z-index: 1;
-  opacity: 1;
-  object-position: center center;
-  filter: saturate(1.05) contrast(1.03);
-}
-
-/* Foto do rosto (ESCONDIDA) */
-.photo-stack .photo-front {
-  display: none !important;
-}
-
-/* Hover elegante simples */
-.photo-stack:hover .photo-back {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 20px 50px rgba($navy, 0.25);
-  filter: saturate(1.1) contrast(1.05);
-  border-color: lighten($gold, 10%);
-}
-
-/* Mobile: centraliza e ajusta proporções */
 @media (max-width: 992px) {
   .photo-stack {
     margin-left: auto;
@@ -553,21 +563,19 @@ pre {
   }
 }
 
-/* Força a foto a ficar à direita no desktop */
 @media (min-width: 992px) {
   .hero-bio .col-lg-5 {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
   }
-  
+
   .photo-stack {
     margin-left: auto;
     margin-right: 0;
   }
 }
 
-/* Mobile: centraliza a foto */
 @media (max-width: 991px) {
   .hero-bio .photo-stack {
     margin-left: auto;
@@ -576,13 +584,72 @@ pre {
   }
 }
 
-/* Ajustes finais da Hero */
-.hero-bio .row {
-  align-items: flex-start !important; 
+// Acessibilidade — respeita preferência por movimento reduzido
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+  }
 }
 
-@media (min-width: 992px) {
-  .hero-bio .col-lg-5 {
-    align-items: flex-start !important;
+// Acessibilidade — estado de foco para navegação por teclado
+:focus-visible {
+  outline: 2px solid $gold;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+// Foco em botões
+.btn:focus-visible {
+  outline: 2px solid $gold;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba($gold, 0.25);
+}
+
+// Foco em links da navbar
+.navbar .nav-link:focus-visible {
+  outline: 2px solid $gold;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+// Foco nos ícones sociais
+.social-icons a:focus-visible,
+.nav-item a[aria-label]:focus-visible {
+  outline: 2px solid $gold;
+  outline-offset: 3px;
+  border-radius: 50%;
+}
+
+// Blog listing — neutraliza links em cards/thumbnails
+.quarto-listing,
+.listing-item {
+  a {
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      color: $rust;
+    }
+  }
+
+  // Título do post: underline suave no hover em vez da linha animada
+  .listing-title a {
+    position: relative;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: $gold;
+      text-decoration-thickness: 2px;
+    }
   }
 }
